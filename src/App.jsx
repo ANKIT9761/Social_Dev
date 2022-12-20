@@ -26,7 +26,7 @@ function App() {
           path="/auth"
           element={user ? <Navigate to="../home" /> : <Auth />}
         />
-        {/* <Route
+        <Route
           path="/profile/:id"
           element={user ? <Profile /> : <Navigate to="../auth" />}
         />
@@ -37,7 +37,7 @@ function App() {
               <p>There's nothing here!</p>
             </main>
           }
-        /> */}
+        />
       </Routes>
     </div>
   );
